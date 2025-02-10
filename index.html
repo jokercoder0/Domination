@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Domi.nation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    *{
+    text-decoration: none;
+
+}
+.container{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navdiv{
+    background-color: white;
+    
+}
+nav ul{
+	list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: 14px;
+    font-family:  "Manrope", serif;
+   
+}
+
+.center{
+    margin-right: 180px;
+
+} 
+#Product{
+   margin-left: 70px
+}
+
+.mainbar a{
+    padding: 0 30px;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    color: black;
+    font-family:  "Manrope", serif;
+}
+
+
+.logo {
+    color: black;
+    margin-right: auto;
+    margin-left: -60px;
+    
+}
+.logo a{
+    font-size: 20px;
+    font-weight: 750;
+}
+
+
+
+.sidebar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+} 
+.sidebar li{
+    width: 100%;
+    line-height: 40px;
+    
+}
+.sidebar a{
+    width: 100%;
+    color: black;
+}
+.sidebar a:hover{
+    background-color: whitesmoke;
+
+}
+
+.mainbar li a{
+			color: black; 
+		}
+.mainbar button{
+		background-color: #F57059; ; border-radius: 40px; height: 45px; width: 140px; border: 1px;margin-top: -12px;margin-right: 100px;
+		}  
+.mainbar button a{
+		color: white; 
+        font-family:  "Manrope", serif;
+		}  
+.menu-button{
+    display: none;
+}        
+@media(max-width: 1230px){
+    .hideonMobile{
+        display: none;
+    }
+    .menu-button{
+    display: block;
+    }   
+}  
+
+      
+
+
+.contain{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    max-width: 1170px;
+    grid-template-columns: 1fr 1fr; 
+
+}
+.contain img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+   
+}
+.content{
+    align-items: center;
+    margin-bottom: 50px;
+    
+
+}
+.imagecon{
+    overflow: hidden;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin-top: 35px;
+
+    
+}
+.info p{
+  color: #8593A3;  
+  margin-top: -10px;
+  line-height: 28px;
+}
+
+
+
+
+.content .p1{
+    font-size: 22px;
+    font-weight: 600;
+
+    
+    
+}
+.content h1{
+    font-size: 55px;
+    font-weight: 800;
+    margin-top:-15px;
+    font-family:  "Manrope", serif;
+   
+    
+}
+.content .p2{
+    font-size: 20px;
+    font-weight: lighter;
+    font-weight: 400;
+    color: #8593A3;
+    margin-top: -20px;
+   
+}
+.content p{
+    font-family:  "Manrope", serif;
+}
+
+.button2{
+    background-color: #05796B;
+    border-radius: 60px;
+    border: 0px;
+    width: 180px; 
+    height: 45px;
+    cursor: pointer;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.656);
+}
+.button2 a{
+    color: white;
+    font-weight: 500;
+    font-family:  "Manrope", serif;
+}
+@media (max-width: 800px) {
+    .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contain {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    button {
+        width: 80px;
+    }
+}
+
+
+.content1{
+   text-align: center;
+   margin-top: 30px;
+   width: 1257px;
+   line-height: 60px;
+}
+.content1 h3{
+   font-size: 22px;
+
+}
+.img2{
+    display: inline-block;
+}
+.img2 img{
+    margin-right: 30px;
+}
+@media (max-width: 800px) {
+    .content1 {
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        line-height: 40px;
+    }
+
+    .content1 h3 {
+        font-size: 18px;
+    }
+
+    .img2 {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .img2 img {
+        margin-right: 15px;
+        width: 50%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: left;
+    grid-gap: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+     
+}
+.gridimage1{
+    border-radius: 15px;
+    padding: 30px;
+    border:1.5px solid;
+    border-color:#E7E7E7;
+    height: 180px;
+    align-items: center;
+    font-family:  "Manrope", serif;
+    
+    
+    
+}
+
+.gridimage1 img{
+    height: 24px;
+    width: 24px;
+    background-color: whitesmoke;
+    padding: 6px;
+    margin-top: 50px;
+}
+.gridimage1 p{
+    color: #757095;
+    font-size: 12px;
+    font-family:  "Manrope", serif;
+    
+
+}
+.content2{
+    margin-top: 120px;
+    align-items: center;
+    text-align: center;
+}
+.content2 h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: -2px;
+    font-family:  "Manrope", serif;
+
+}
+.content2 h3{
+    margin-bottom: -4px;
+    font-family:  "Manrope", serif;
+}
+
+.content2 p{
+    font-size: 14px;
+    font-weight: 700;
+    font-family:  "Manrope", serif;
+}
+#main{
+    background-color: #05796B;
+    
+}
+#main h3{
+    font-size: 33px;
+    font-weight: 700;
+    color: white;
+    margin-top: 65px;
+}
+#main p{
+    color: white;
+}
+@media (max-width: 800px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        text-align: left;
+        grid-gap: 15px;
+        margin: 20px;
+    }
+
+    .gridimage1 {
+        border-radius: 10px;
+        padding: 15px;
+        border: 1px solid #E7E7E7;
+        height: auto;
+        align-items: center;
+        font-family: "Manrope", serif;
+    }
+
+    .gridimage1 img {
+        height: 20px;
+        width: 20px;
+        background-color: whitesmoke;
+        padding: 4px;
+        margin-top: 20px;
+    }
+
+    .gridimage1 p {
+        color: #757095;
+        font-size: 10px;
+        font-family: "Manrope", serif;
+    }
+
+    .content2 {
+        margin-top: 60px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content2 h2 {
+        font-size: 28px;
+        font-weight: 800;
+        margin-top: 0;
+        font-family: "Manrope", serif;
+    }
+
+    .content2 h3 {
+        margin-bottom: 0;
+        font-family: "Manrope", serif;
+    }
+
+    .content2 p {
+        font-size: 12px;
+        font-weight: 700;
+        font-family: "Manrope", serif;
+    }
+
+    #main {
+        background-color: #05796B;
+        padding: 20px;
+    }
+
+    #main h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        margin-top: 30px;
+    }
+
+    #main p {
+        color: white;
+        font-size: 12px;
+    }
+}
+
+.content3{
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    
+   
+}
+.content3 h2{
+    margin-top: -1px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family:  "Manrope", serif;
+}
+.content3 p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family:  "Manrope", serif;
+    color: #757095;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  
+}
+#frame{
+    margin-top: -70px;
+}
+#frame1{
+    color: #F57059;
+    font-size: 14px;
+    font-weight: 700;
+}
+.content3i{
+    margin-top: 140px;
+}
+.content3i h2{
+    line-height: 55px;
+}
+.button3{
+    width: 150px;
+    height: 45px;
+    border: 0px;
+    border-radius: 40px;
+    background-color: #F57059;
+
+}
+.button3 a{
+    color: white;
+    font-family:  "Manrope", serif;
+}
+.button4{
+    width: 150px;
+    height: 45px;
+    border: 0px;
+    border-radius: 40px;
+    background-color: #05796B;
+    cursor: pointer;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.656);
+        
+}
+.button4 a{
+    color: white;
+    font-family:  "Manrope", serif;
+}
+
+@media (max-width: 800px) {
+    .content3i {
+        margin-top: 80px;
+    }
+
+    .content3i h2 {
+        line-height: 40px;
+        font-size: 28px;
+    }
+
+    .button3 {
+        width: 200px;
+        height: 40px;
+        
+    }
+
+    .button4 {
+        width: 200px;
+        height: 40px;
+        background-color: #05796B;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.656);
+    }
+
+    #button4i {
+        height: 42px;
+        width: 200px;
+        
+    }
+}
+
+.content4{
+    margin-top: 150px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 65px;
+    margin-right: 65px;
+    float: left;
+    justify-content: center;
+    font-family:  "Manrope", serif;
+   
+}
+.content4 button{
+    margin-top: 3%;
+}
+
+.grid2{
+    margin-top: 7% ;
+    float: left;
+    padding: 70px;
+    
+   
+}
+.grid2 h2{
+    font-size: 40px;
+    font-weight: 800;
+    
+}
+.grid2 p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #757095;
+    line-height: 30px;
+}
+@media (max-width: 800px) {
+    .content4 {
+        margin-top: 80px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+        margin-right: 10px;
+        justify-content: center;
+        font-family: "Manrope", serif;
+    }
+    .content4 img{
+        margin-left: 75px;
+    }
+    #button4i{
+        margin-left: 33%;
+        margin-top: -3px;
+    }
+    
+    
+
+    .grid2 {
+       margin-top: -50px;
+        float: none;
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+
+    .grid2 h2 {
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .grid2 p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #757095;
+        line-height: 24px;
+    }
+}
+
+
+.content5a{
+    align-items: center;
+    text-align: center;
+    font-family:"Manrope", serif ;
+   
+
+
+}
+.content5a h2{
+    font-size: 46px;
+    font-weight: 800;
+}
+.content5a p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #757095;
+}
+.content5i{
+    width: 740px;
+    margin: auto;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+    font-family:"Manrope", serif ;
+    margin-top: 40px;
+    
+    
+}
+.content5i .card{
+    width: 360px;
+    height: 570px;
+    background-color: antiquewhite;
+    border-radius: 16px;
+    padding: 25px;
+
+}
+.content5i .card-title{
+    margin-bottom: 60px;
+    line-height: 20%;
+}
+
+#card1{
+    background-color: whitesmoke;
+    border: 2px s;
+}
+#card2{
+    background-color: #05796B;
+}
+.card-title{
+    font-family:"Manrope", serif ;
+}
+.card-title #plan1{
+    height: 19px;
+    font-weight: 400;
+    color: #05796B;
+}
+
+.card-title #plan2{
+    height: 19px;
+    font-weight: 400;
+    color: white;
+    color: rgba(253, 250, 250, 0.84);
+
+}
+
+.card-title #price1{
+    font-size: 64px;
+    font-weight: 700;
+    
+}
+.card-title #price2{
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+    
+}
+#price1 span{
+    color: #8593A3;
+}
+#price2 span{
+    color: rgba(253, 250, 250, 0.84);
+}
+
+.card-title p span{
+    font-size:16px ;
+    padding: 0px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.card-title #details1{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #8593A3;
+    
+    
+}
+.card-title #details2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #FFFFFF;
+    color: rgba(253, 250, 250, 0.84);
+    
+}
+.card-content1 ul{
+    line-height: 42px;
+    list-style: none;
+    margin-left: -35px;
+    color: #8593A3;
+
+}
+.card-content2 ul{
+    line-height: 40px;
+    list-style: none;
+    margin-left: -35px;
+    color: white;
+    color: rgba(253, 250, 250, 0.84);
+
+}
+.card-content1 button{
+    width: 300px;
+    height: 55px;
+    border-radius: 80px;
+    background-color: #FFFFFF; 
+    border: 1px solid #8593A352;
+}
+.card-content2 button{
+    width: 300px;
+    height: 54px;
+    border-radius: 80px;
+    background-color: #FFFFFF; 
+    border: 0px;
+    margin-bottom: -4px;
+    
+}
+
+.card-content1 button a{
+    color: #8593A3;
+    font-size: 15px;
+    font-weight: 600;
+    font-family:"Manrope", serif ;
+}
+.card-content2 button a{
+    color: #282828;
+    font-size: 15px;
+    font-weight: 650;
+    font-family:"Manrope", serif ;
+}
+.fa{
+    margin-right: 20px;
+}
+.card-content1 .fa-check-circle{
+ color:#05796B;
+}
+.card-content1 .fa-times-circle{
+    color: #F57059;
+}
+hr.solid {
+  border-top: 1px solid #FFFFFF29;
+  width: 280px;
+  margin-top: -16px;
+  padding: 0px;
+}
+@media (max-width: 800px) {
+    .content5a {
+        align-items: center;
+        text-align: center;
+        font-family: "Manrope", serif;
+        padding: 20px;
+    }
+
+    .content5a h2 {
+        font-size: 32px;
+        font-weight: 800;
+    }
+
+    .content5a p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #757095;
+    }
+}
+
+.content6i{
+    text-align: center;
+    font-family:"Manrope", serif ;
+    margin-top: 120px;
+    line-height: 30px;
+}
+.content6i h2{
+    font-size: 35px;
+    font-weight: 800;
+}
+.content6i p{
+    color: #3734A9;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+.grid3ii{
+    margin-top: 13%;
+    float: left;
+    justify-content: left;
+    font-family:"Manrope", serif ;
+
+}
+.grid3ii p{
+  font-size: 30px;
+  font-weight: 700;
+  padding: 25px;
+  width: 554px;
+  margin-top: -11px;
+}
+#img0{
+    display:block;
+    margin: 15px;
+    margin-left: 24px;
+    
+}
+#img10{
+    float: right;
+    margin-top: 8px;
+    margin-right: 65px;
+}
+#img00{
+    margin-left: 24px;
+}
+@media (max-width: 800px) {
+    .content6i {
+        text-align: center;
+        font-family: "Manrope", serif;
+        margin-top: 80px;
+        line-height: 24px;
+        
+    }
+    .content6{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .content6i h2 {
+        font-size: 28px;
+        font-weight: 800;
+       
+    }
+
+    .content6i p {
+        color: #3734A9;
+        font-weight: 700;
+        margin-bottom: -5px;
+    }
+    .grid3i{
+        margin-left: 70px;
+    }
+
+    .grid3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .grid3ii {
+        margin-top:-5px;
+        justify-content: left;
+        font-family: "Manrope", serif;
+    }
+
+    .grid3ii p {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 15px;
+        width: 100%;
+        margin-top: -8px;
+    }
+
+    #img0 {
+        display: block;
+        margin: 10px;
+        margin-left: 15px;
+    }
+
+    #img10 {
+
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    #img00 {
+        margin-left: 15px;
+    }
+}
+
+.content7{
+    text-align: center;
+    height: 400px;
+    width: 1050px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: #05796B;
+    border-radius: 16px;
+    background-image: url(./images/Group\ 1123.png);
+    background-repeat: no-repeat;
+    background-position:90% 40px;
+    
+}
+.content7 h2{
+    font-size: 53px;
+    font-weight: 800;
+    color: #FFFFFF; 
+   
+}
+.content7ii{
+    background-image: url(./images/Vector1999.png);
+    background-repeat: no-repeat;
+    background-position: 95px 40px
+}
+.content7i{
+    padding: 45px;
+    font-family:"Manrope", serif ;
+    line-height: 60px;
+    
+}
+
+.content7 button{
+    height: 59px;
+    width: 220px;
+    border-radius: 40px;
+    border: 0px;
+    background-color: #FF7F5C;;
+    margin-top: -20px;
+    
+}
+.content7 button a{
+   font-weight: 700;
+   color: white;
+   font-family:  "Manrope", serif;
+}
+@media (max-width: 800px) {
+    .content7 {
+        text-align: center;
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        background-color: #05796B;
+        border-radius: 16px;
+        background-image: url(./images/Group%201123.png);
+        background-repeat: no-repeat;
+        padding: 20px;
+    }
+
+    .content7 h2 {
+        font-size: 28px;
+        font-weight: 800;
+        color: #FFFFFF;
+    }
+
+    .content7ii {
+        background-image: url(./images/Vector1999.png);
+        background-repeat: no-repeat;
+        background-position: 90px 20px;
+    }
+
+    .content7i {
+        padding: 20px;
+        font-family: "Manrope", serif;
+        line-height: 40px;
+    }
+
+    .content7 button {
+        height: 45px;
+        width: 160px;
+        background-color: #FF7F5C;
+        margin-top: 10px;
+    }
+
+    .content7 button a {
+        font-weight: 700;
+    }
+}
+
+.content8{
+    display: flex;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    gap: 30px;
+    font-family:"Manrope", serif ;
+}
+.content8 h3{
+    color: #1B1C31;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.content8i p{
+    line-height: -35px;
+    font-size: 16px;
+    font-weight: 40;
+}
+.content8 ul{
+    list-style: none;
+    line-height: 30px;
+    color: #1B1C31
+}
+.content8 li{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 37px;
+    color: #1B1C31
+}
+.content8i ul{
+    margin-left: 66px;
+   
+}
+.content8ii{
+    margin-left: 80px;
+}
+@media (max-width: 800px) {
+    .content8 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 80px;
+        margin-bottom: 30px;
+        gap: 15px;
+        font-family: "Manrope", serif;
+        padding: 0 20px;
+    }
+
+    .content8 h3 {
+        color: #1B1C31;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .content8i p {
+        line-height: 24px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .content8 ul {
+        list-style: none;
+        line-height: 25px;
+        color: #1B1C31;
+        padding: 0;
+        
+    }
+
+    .content8 li {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #1B1C31;
+    }
+
+    .content8i ul {
+        margin-left: 0px;
+    }
+
+    .content8ii {
+        margin-left: 0;
+    }
+}
+
+
+
+  </style>
+</head>
+<body>
+    <section class="container">
+        <nav class="navbar">
+            <div class="navdiv"> 
+                <ul class="sidebar">
+                    <li onclick=Hidesidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Template</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li ><a href="#">Sign in</a></li>
+                   
+                </ul>
+                <ul class="mainbar">
+                    <li class="logo" ><a href="#">AR SHAKIR</a> </li>
+                    <li class="hideonMobile" id="Product"><a href="#">Product</a></li>
+                    <li  class="hideonMobile"><a href="#">Template</a></li>
+                    <li  class="hideonMobile"><a href="#">Blog</a></li>
+                    <li class="center hideonMobile"><a href="#">Pricing</a></li>
+                    <li  class="hideonMobile" id="float" ><a href="#">Sign in</a></li>
+                    <button  class="hideonMobile"  id="float" ><a href="#">Start Free</a></button>
+                    <li class="menu-button" onclick=Showsidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="contain">
+            <div class="content">
+                <p class="p1">Product Growth Solution in Single Platform.</p>
+                <h1> Managing business <br> payments has never been easier</h1>
+                <p class="p2">Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly.</p>
+                <button class="button2"><a href="#">Try for Free</a></button>
+                <div class="info">
+                    <div class="info1">
+                        <h3>195k+ user</h3>
+                        <p> Delightful remarkably mr on <br> announcing themselves entreaties favourable.</p>
+                    </div>
+                    <div class="info2">
+                        <h3>$400m+ saved</h3>
+                        <p>About to in so terms voice at. Equal<br> an would is found seems of and concluded.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imagecon">
+                <img class="img1" src="./images/Image.jpg">
+            </div>
+        </div>
+    </section>
+        
+    </section>>
+    <section class="content1">
+        <div>
+            <h3>Over 32k+ software  businesses growing with AR Shakir</h3>
+        </div>
+        <div class="img2">
+            <img src="./images/Group.jpg" >
+            <img src="./images/Group1.jpg" >
+            <img src="./images/Group2.jpg " >
+            <img src="./images/Group3.jpg">
+            <img src="./images/Group4.jpg">
+            <img src="./images/Group5.jpg">
+            <img src="./images/Group6.jpg">
+        </div>
+    </section>
+    <section class="content2">
+        <div>
+            <p>OUR SERVICES</p>
+            <h2>Save Time Managing Your Business<br> With Our Best Services</h2>
+        </div>
+        <div class="grid">
+            <div class="gridimage1">
+                <img src="./images/ui-checks-grid.png">
+                <h3>Project<br> Management</h3>
+                <p>30 options available</p>
+            </div>
+            <div class="gridimage1">
+                <img src="./images/Vector1.png">
+                <h3>Web & mobile Development</h3>
+                <p>40 options available</p>
+            </div>
+            <div class="gridimage1">
+                <img src="./images/headset.png">
+                <h3>Customer<br> Support</h3>
+                <p>17 options available</p>
+            </div>
+            <div class="gridimage1">
+                <img src="./images/people.png">
+                <h3>Human<br> Resources</h3>
+                <p>21 options available</p>
+            </div>
+            <div class="gridimage1">
+                <img src="./images/gem2.png">
+                <h3>Design &<br> Creatives</h3>
+                <p>13 options available</p>
+            </div>
+            <div class="gridimage1">
+                <img src="./images/lighting.png">
+                <h3>Marketing &<br> Communications</h3>
+                <p>27 options available</p>
+            </div>
+            <div class="gridimage1">
+                <img src="./images/briefcase.png">
+                <h3>Business<br> Development</h3>
+                <p>22 options available</p>
+            </div>
+            <div class="gridimage1" id="main"> 
+                <h3>+4<br>More</h3>
+                <p>30 options available</p>
+            </div>
+        </div>
+    </section>
+   <section class="content3">
+        <div>
+            <img src="./images/62.png">
+        </div>
+        <div>
+            <h2>Learn More About Process</h2>
+            <p>Was are delightful solicitude discovered collecting man<br> day. Resolving neglected sir tolerably.</p>
+        </div>
+        <div class="grid1">
+                <img id="frame" src="./images/1.register.png">
+                <img src="./images/2.complete.png">
+                <img src="./images/Group 1000000809.png">
+        </div>
+        <div class="content3i">
+            <p id="frame1">PROJECT MANAGEMENT APP</p>
+            <h2>Download our app and start your free <br> trail to get started today!</h2>
+            <p>End-to-end payments and financial management in a single solution.</p>
+            <button class="button3" ><a href="#">playstore</a></button>
+            <button class="button4"><a href="#">Google play</a></button>
+        </div>
+   </section>
+   <section class="content4">
+    <div>
+    <img src="./images/Group 1000000810.jpg">
+    </div>
+    <div class="grid2">
+        <h2>My little garret repair to desire he esteem.</h2>
+        <p>Just like we said before, we have tons of features that will helps you to manage you wallet. From income, outcome, montly usage, and etc.</p>
+        <button class="button4" id="button4i" ><a href="#">Try for free</a></button>
+    </div>
+   </section>
+   <section class="content5">
+    <div class="content5a">
+        <h2>Start today, with free or<br> premium plan, you choose</h2>
+        <p>With lots of unique and useful features, you can easily manage<br> your wallet easily without any problem.</p>
+    </div>
+    <div class="content5i" >
+        <div class="card" id="card1">
+            <div class="card-title">
+                <p id="plan1">BASIC PLAN</p>
+                <p id="price1">$0 <span>Per month</span></p>
+                <p id="details1">Joy horrible moreover man feelings own shy. Request norland neither mistake for yet Between the for morning assured.</p>
+            </div>
+            <hr class="solid">
+            <div class="card-content1">
+            <ul>
+                <li><i class="fa fa-check-circle"></i> Customer Support</li>
+                <li><i class="fa fa-check-circle"></i> Free user account</li>
+                <li><i class="fa fa-times-circle"></i> Monthly Reports</li>
+                <li><i class="fa fa-times-circle"></i> Multiple Devices</li>
+            </ul>
+            <button><a href="#">Join for Free</a></button>
+           </div>
+        </div>
+
+        <div class="card" id="card2">
+            <div class="card-title">
+                <p id="plan2">PREMIUM PLAN</p>
+                <p id="price2">$49 <span>Per month</span></p>
+                <p id="details2">On even feet time have an no at. Relation so in confined smallest children unpacked delicate. Why sir end believe.</p>
+            </div>
+            <hr class="solid">
+            <div class="card-content2">
+            <ul>
+                <li><i class="fa fa-check-circle"></i> Customer Support</li>
+                <li><i class="fa fa-check-circle"></i> Upto 10users</li>
+                <li><i class="fa fa-check-circle"></i> Monthly Reports</li>
+                <li><i class="fa fa-check-circle"></i> Multiple Devices Supported</li>
+            </ul>
+            <button><a href="#">Get the premium</a></button>
+           </div>
+        </div>
+    </div>
+   </section>
+   <section class="content6">
+    <div class="content6i">
+        <p>TESTIMONIALS</p>
+        <h2>Check what our clients are saying</h2>
+    </div>
+    <div  class="grid3">
+        <div class="grid3i">
+            <img src="./images/Group 105050.jpg">
+        </div>
+        <div class="grid3ii">
+            <img id="img0" src="./images/group111.png">
+            <img id="img0" src="./images/Group 1500.png">
+            <p>Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.</p>
+            <img id="img00" src="./images/Group 199.png">
+            <img id="img10" src="./images/Group200.png">
+        </div>
+    </div>
+   </section>
+   <section class="content7">
+    <div class="content7ii">
+        <div class="content7i" style="background-image: url(./images/Group\ 2025.png); background-position: 50px 100%; background-repeat: no-repeat;" >
+            <h2>Discover a better way to<br> manage purchases.</h2>
+            <button><a href="#">Get Started Now</a></button>
+        </div>
+    </div>
+   </section>
+   <section class="content8">
+    <div class="content8i">
+        <ul>
+        <h3>AR SHAKIR</h3>
+        <p>Finance helps companies<br> manage payments easily.</p>
+        <img src="./images/Group 69.png">
+       </ul>
+    </div>
+    <div class="content8ii">
+        <ul>
+            <h3>Company</h3>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>Pricing</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <h3>Product</h3>
+            <li>Invoicing</li>
+            <li>Contract</li>
+            <li>Accounting</li>
+            <li>Proposal</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <h3>Resources</h3>
+            <li>Proposal Template</li>
+            <li>Invoice Template</li>
+            <li>Toturials</li>
+            <li>How to write a contract</li>
+        </ul>
+    </div>
+    <div class="content8iii">
+        <ul>
+            <h3>Contact Us</h3>
+            <li> <img src="./images/email.png"> shakir260@gmail.com</li>
+            <li> <img src="./images/call.png"> +92-300-848-8985</li>
+
+        </ul>
+    </div>
+   </section>
+
+   <script>
+    function Showsidebar(){
+    const sidebar= document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+
+}
+function Hidesidebar(){
+        const sidebar= document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+    }
+   </script>
+</body>
+</html>    
